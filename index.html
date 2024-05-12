@@ -16,16 +16,16 @@
     </main>
     <!-- You can add more sections, content, or scripts as needed -->
 <script>
-        // Fetch config.yml using fetch API
-        fetch('_config.yml')
-            .then(response => response.text())
-            .then(data => {
-                // Parse YAML to JSON
-                const jsonData = YAML.parse(data);
-                // Access your configuration data
-                document.getElementById('configData').innerText = `Configuration: ${JSON.stringify(jsonData)}`;
-            })
-            .catch(error => console.error('Error fetching config.yml:', error));
-    </script>
+     // Fetch config.yml using fetch API
+     fetch('_config.yml')
+         .then(response => response.text())
+         .then(data => {
+            // Parse YAML to JSON
+            const jsonData = YAML.parse(data);
+            // Access your configuration data
+            document.getElementById('configData').innerText = `Configuration: ${JSON.stringify(jsonData)}`;
+         })
+         .catch(error => console.error('Error fetching config.yml:', error));
+</script>
 </body>
 </html>
